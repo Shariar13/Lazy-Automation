@@ -11,3 +11,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 def home(request):
     return render (request, "index.html")
+
+def virtual_assistant (request):
+    return render (request, "virtual_assistant.html")

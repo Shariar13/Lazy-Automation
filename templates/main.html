@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;600&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LazyAutomation</title>
+</head>
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    .logo {
+        color: white;
+        padding-left: 29px;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        display: grid;
+        gap: 10px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .item {
+        border: 1px solid rgb(199, 199, 199);
+    }
+
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: black;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .create-private-assistant {
+        padding: 19px;
+        font-size: 29px;
+    }
+</style>
+
+<body>
+    <div class="item header">
+        <h1 class="logo"><b>LazyAutomation</b></h1>
+
+    </div>
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <div class="item footer">
+        <p>Contact With Developer: Shariar Kabir</p>
+
+    </div>
+
+</body>
+
+</html>

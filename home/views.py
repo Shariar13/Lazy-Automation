@@ -27,7 +27,9 @@ def search_youtube (request):
     driver = webdriver.Chrome(options=options)
     driver.get('https://www.youtube.com/results?search_query={}'.format(str(video)))
     return render (request, "virtual_assistant.html")
-    
+
+
+
     
 
     # # play the video

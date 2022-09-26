@@ -20,12 +20,14 @@ def virtual_assistant (request):
     return render (request, "virtual_assistant.html")
 
 def search_youtube (request):
-    if request.method == "GET":
-        video = request.GET ['search']
-    driver = webdriver.Chrome()
+    if request.method == "POST":
+        video = request.POST ['search']
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option("detach", True)
+    driver = webdriver.Chrome(options=options)
     driver.get('https://www.youtube.com/results?search_query={}'.format(str(video)))
-    while(True):
-       pass
+    return render (request, "virtual_assistant.html")
+    
     
 
     # # play the video

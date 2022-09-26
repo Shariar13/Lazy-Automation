@@ -21,7 +21,7 @@
     <h1 class="title"><b>Create Yout Own Virtual Assistant</b></h1>
     <div class="assistant">
 
-        <form action="">
+        <form action="{% url 'search_youtube' %}" method="GET">
             {% csrf_token %}
             <label for="">Search Something In Chrome Browser</label>
             <br>

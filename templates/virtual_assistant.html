@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<style>
+    .virtual_assistant {
+        text-align: center;
+    }
+
+    .assistant {
+        width: 73%;
+        height: 500px;
+        border: 1px solid black;
+        margin: auto;
+    }
+
+    form {
+        margin: 29px;
+    }
+</style>
+<div class="virtual_assistant">
+    <h1 class="title"><b>Create Yout Own Virtual Assistant</b></h1>
+    <div class="assistant">
+
+        <form action="">
+            {% csrf_token %}
+            <label for="">Search Something In Chrome Browser</label>
+            <br>
+            <br>
+            <input type="text" name="search" placeholder="Search">
+            <input type="submit" value="Submit">
+        </form>
+
+
+    </div>
+</div>
+{% endblock content %}
